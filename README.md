@@ -1,5 +1,4 @@
 # SaveTheEarth
-avenger 1:
 Thor
 
 He is preferably the most powerful avenger in the team.
