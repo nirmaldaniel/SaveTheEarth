@@ -24,15 +24,18 @@ quicksort(number,j+1,last);
 }
 }
 int main(){
-int i, count, number[25];
-printf("Enter some elements (Max. - 25): ");
+int i, count, number[25],x,y;
+printf("Enter the no of pairs (Max. - 25): ");
 scanf("%d",&count);
-printf("Enter %d elements: ", count);
+printf("Enter %d pair of elements in (a,b) order : ", count);
 for(i=0;i<count;i++)
-scanf("%d",&number[i]);
+{
+scanf("%d %d",&x,&y);
+number[i]=100000*x+y;
+}
 quicksort(number,0,count-1);
 printf("The Sorted Order is: ");
 for(i=0;i<count;i++)
-printf(" %d",number[i]);
+printf("(%d,%d)",number[i]/100000,number[i]-((number[i]/100000)*100000));
 return 0;
 }
